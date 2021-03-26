@@ -1,0 +1,53 @@
+body {
+    background-image: url('/bolsavalores.png');  
+    background-position: center-bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Mono', monospace;  
+  }
+  
+  #header {
+    margin-top: 50px auto;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right:10px;
+  }
+  
+  #converter {
+    width: 400px;
+    margin: 200px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #F0F0F3;
+    font-size: 0.8em;
+    color: #4a5568;
+    border-radius: 8px;  
+    box-shadow: -10px -10px 30px #FFF, 10px 10px 30px #AEAEC040;
+  }
+  
+  #insertValue {
+    background-color: #F0F0F3;
+    box-shadow: -10px -10px 10px #FFFFFF70, 10px 10px 10px #AEAEC020;
+  }
+  
+  #buttonConverter {
+    margin-top: 15px;
+    border: soft;
+    border-radius: 3px;
+    background-color: #F0F0F3;
+    font-weight: bold;
+    color: #4a5568;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: -10px -10px 30px #FFF, 10px 10px 30px #AEAEC040;
+  }
