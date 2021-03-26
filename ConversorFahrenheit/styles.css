@@ -1,0 +1,48 @@
+body {
+    background-image: url("/termometro.jpg"); 
+    background-size: 90%;
+    font-family: 'Roboto Mono', monospace;
+    color: #EBEBEB;
+  }
+  
+  #header {
+    margin-top: 50px auto;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right:10px;
+  }
+  
+  #converter {
+    width: 600px;
+    text-align: center;
+    margin: 200px auto;
+    border: 5px solid; 
+    border-radius: 30px;
+    background-color: #ff708f;
+    box-shadow: -10px -10px 30px #ff708f, 10px 10px 30px #ff708f;
+  }
+  
+  #celsiusInput {
+    background-color: #F0F0F3;
+  }
+  
+  #convertButton {
+    margin-top: 15px;
+    border: soft;
+    border-radius: 3px;
+    background-color: #EBEBEB;
+    font-weight: bold;
+    color: #4a5568;
+    border-radius: 5px;
+    padding: 5px;  
+  }
