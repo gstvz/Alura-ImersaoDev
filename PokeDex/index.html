@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">    
+    <title> PokéDex </title>
+</head>
+<body>
+    <div id="header">
+        <img id="headerLogo" src="https://logodownload.org/wp-content/uploads/2017/08/pokemon-logo.png"> 
+    </div>
+
+    <div id="quiz">
+        <h1> Qual o nome desse pokémon? </h1>
+        <img id="pokemonImg" src="" alt=""><br>
+        <input id="pokemonName" type="text"><br>
+        <button id="sendButton" onclick="checkAnswer()"> Enviar </button>
+        <h2 id="result"> </h2>
+        <button id="nextButton" hidden onclick="next()"> Próximo </button>
+        <button id="tryAgainButton" hidden onclick="tryAgain()"> Tente de novo </button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

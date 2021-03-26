@@ -1,0 +1,47 @@
+body {
+    background-image: url('./images/background.png');
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  #header {
+    text-align: center;
+  }
+  
+  #headerLogo {
+    width: 600px;
+    height: 200px;
+  }
+  
+  #quiz {
+    text-align: center;
+    color: #ffcb05;  
+  }
+  
+  #quiz h1{
+    -webkit-text-stroke: 1px #3c5aa6;
+  }
+  
+  h2 {
+    -webkit-text-stroke: 1px #3c5aa6;
+  }
+  
+  #pokemonImg {
+    width: 200px;
+    height: 200px;
+  }
+  
+  button {
+    border-radius: 5px;
+    background: #ffcb05;
+    color: #2a75bb;
+  }
+  
+  #pokemonName {
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+  
+  #sendButton {
+    margin: 10px auto;
+  }
+  
