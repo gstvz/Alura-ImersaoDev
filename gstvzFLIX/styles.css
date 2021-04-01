@@ -1,0 +1,67 @@
+#title {
+    text-align: center;
+      color: red;
+      font-size: 5em;
+      font-family: 'Bebas Neue', cursive; 
+    margin-bottom: 150px;
+  }
+  
+  body {
+    font-family: 'Roboto Mono', monospace;
+    background-image: url('./images/background.jpg');
+  }
+  
+  #games{
+    margin: auto;    
+    text-align: center;
+    
+    padding-top: 40px; 
+    padding-left: 40px;
+    padding-right: 40px;
+    width: max-content;
+    height: 150px;  
+    
+    background-color: #c9c9d4;  
+    border: 2px solid var(--color-shadow);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+  }
+  
+  #gamesGrid{
+    visibility: hidden;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    width: 800px;
+    
+    margin: auto;
+    text-align: center;
+    justify-content: space-around;
+    
+    background-color: #c9c9d4;  
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+    
+    font-family: 'Bebas Neue', cursive; 
+  }
+  
+  #returnButton { 
+    visibility: hidden;
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin: auto;  
+    
+    margin-top: 10px;
+  }
+  
+  button {
+    font-family: 'Bebas Neue', cursive;  
+    font-size: 1.3em;
+    background-color: red;
+  }
