@@ -1,10 +1,12 @@
+const question = document.getElementById('question');
+const pokemonImg = document.getElementById('pokemonImg');
 const sendButton = document.getElementById('sendButton');
 const tryAgainButton = document.getElementById('tryAgainButton');
 const nextButton = document.getElementById('nextButton');
 const result = document.getElementById('result');
-const pokemonImg = document.getElementById('pokemonImg');
 
 var pokemonNumber = 0;
+var pontos = 0;
 
 const pokemons = [
   {
@@ -34,6 +36,18 @@ const pokemons = [
   {
     name: "gengar",
     img: "./images/gengar.png"
+  },
+  {
+    name: "snorlax",
+    img: "./images/snorlax.png",
+  },
+  {
+    name: "eevee",
+    img: "./images/eevee.png",
+  },
+  {
+    name: "vaporeon",
+    img: "./images/vaporeon.png"
   }
 ];
 
@@ -50,7 +64,8 @@ function checkAnswer() {
     result.innerHTML = "Parabéns! Você acertou!";
     sendButton.setAttribute('hidden', '');
     nextButton.removeAttribute('hidden');
-    pokemons.splice(pokemonNumber, 1);    
+    pokemons.splice(pokemonNumber, 1);
+    pontos++;
   }
   else{
     result.innerHTML = "Você errou. Tente de novo.";
@@ -58,6 +73,9 @@ function checkAnswer() {
     tryAgainButton.removeAttribute('hidden');
     pokemons.splice(pokemonNumber, 1);
   }
+  if(pokemons.length == 0){
+    endGame();
+  };
 };
 
 function tryAgain(){
@@ -72,4 +90,14 @@ function next(){
   sendButton.removeAttribute('hidden');
   result.innerHTML = "";
   showPokemon();
+}
+
+function endGame(){
+  question.setAttribute('hidden', '');
+  pokemonName.setAttribute('hidden', '');
+  pokemonImg.setAttribute('hidden', '');
+  sendButton.setAttribute('hidden', '');
+  nextButton.setAttribute('hidden', '');
+  tryAgainButton.setAttribute('hidden', '');  
+  result.innerHTML = `Fim de jogo! <br> Você acertou o nome de ${pontos} pokemons!`;
 }
