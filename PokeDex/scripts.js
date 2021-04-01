@@ -4,6 +4,8 @@ const nextButton = document.getElementById('nextButton');
 const result = document.getElementById('result');
 const pokemonImg = document.getElementById('pokemonImg');
 
+var pokemonNumber = 0;
+
 const pokemons = [
   {
     name: "pikachu",    
@@ -35,35 +37,39 @@ const pokemons = [
   }
 ];
 
-let pokemonNumber = 0;
+showPokemon();
 
 function showPokemon (){
   pokemonNumber = Math.floor(Math.random() * pokemons.length);
   pokemonImg.setAttribute('src', pokemons[pokemonNumber].img)
 }
 
-showPokemon();
-
 function checkAnswer() {
-  let pokemonName = document.getElementById('pokemonName').value;
+  var pokemonName = document.getElementById('pokemonName').value;
   if(pokemonName.toLowerCase() == pokemons[pokemonNumber].name.toLowerCase()){
     result.innerHTML = "Parabéns! Você acertou!";
+    sendButton.setAttribute('hidden', '');
     nextButton.removeAttribute('hidden');
+    pokemons.splice(pokemonNumber, 1);    
   }
   else{
     result.innerHTML = "Você errou. Tente de novo.";
+    sendButton.setAttribute('hidden', '');
     tryAgainButton.removeAttribute('hidden');
+    pokemons.splice(pokemonNumber, 1);
   }
 };
 
 function tryAgain(){
   tryAgainButton.setAttribute('hidden', '');
+  sendButton.removeAttribute('hidden');
   result.innerHTML = "";
   showPokemon();
 }
 
 function next(){  
   nextButton.setAttribute('hidden', '');
+  sendButton.removeAttribute('hidden');
   result.innerHTML = "";
   showPokemon();
 }
