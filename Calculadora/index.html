@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> Calculadora </title>
+</head>
+<body>
+    <div id="first">
+        <h3> Insira um valor </h3>
+        <input id="firstValue" type="number">
+        <br>
+        <button id="firstButton" onclick="hideFirst()"> Enviar </button>  
+      </div>
+      
+      <div id="second" hidden>
+        <h3> Insira outro valor </h3>
+        <input id="secondValue" type="number">
+        <br>
+        <button id="secondButton" onclick="hideSecond()"> Enviar </button>  
+      </div>
+      
+      <div id="third" hidden>
+        <h3> Escolha uma operação </h3>
+        <button id="addition" onclick="addition()"> + </button>
+        <button id="subtraction" onclick="subtraction()"> - </button>
+        <button id="multiplication" onclick="multiplication()"> * </button>
+        <button id="division" onclick="division()"> / </button>
+      </div>
+      
+      <div id="fourth" hidden>
+        <h3 id="textResult"> </h3>
+        <button id="another" onclick="newOperation()"> Nova operação </button>
+      </div>
+</body>
+<script src="scripts.js"></script>
+</html>

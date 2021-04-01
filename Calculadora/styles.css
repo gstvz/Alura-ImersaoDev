@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    background-image: url('./images/background.jpg');
+    font-family: 'Roboto Mono', monospace;
+    color: #26496f;
+  }
+  
+  div {
+    width: 300px;
+    margin: 300px auto;
+    border: solid;
+    border-radius: 30px;
+    outline: 5px;
+    outline-color: #00264d;
+    background-color: #EBEBEB;
+  }
+  
+  button {
+    width: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #26496f;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  #third button {
+    width: 50px;
+    margin: auto auto 20px auto;
+  }
+  
+  #fourth button{
+    width: 110px;
+    margin: auto auto 20px auto;
+  }
