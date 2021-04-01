@@ -10,18 +10,36 @@
     <title> gstvz FLIX </title>
 </head>
 <body>
-
-    <div id="header-container">
+    <div class="header-container">
         <h1 id="title"> GSTVZ FLIX </h1>
     </div>
-    <div id="container">
-    <div id="games">
-        <h2> Jogos zerados em 2021 </h2>
-        <button id="check-games" onclick='showGames()'> Ver </button>
+    <div id="container" class="container">
+        <div id="blocks">
+            <div id="block-titles">
+                <h2> Séries, Animes e Filmes assistidos em 2021 </h2>
+            </div>
+        <div id="check-buttons">
+            <button id="cinemaButton" onclick="showCinema()"> Ver </button>
+        </div>
+    </div>
+    <div id="blocks">
+        <div id="block-titles">
+            <h2> Jogos zerados em 2021 </h2>
+        </div>
+        <div id="check-buttons">
+            <button id="gamesButton" onclick="showGames()"> Ver </button>
+        </div>
+    </div>
+    <div id="blocks">
+        <div id="block-titles">
+            <h2> Livros lidos em 2021 </h2>
+        </div>
+        <div id="check-buttons">
+            <button id="booksButton" onclick="showBooks()"> Ver </button>
+        </div>
     </div>
     </div>
-    <div id="gamesGrid">
-
+    <div id="gamesGrid">      
     </div>
     <button id="returnButton" onclick='returnPage()'> Voltar </button>
 

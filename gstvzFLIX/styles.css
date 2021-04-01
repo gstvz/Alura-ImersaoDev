@@ -1,67 +1,82 @@
 #title {
-    text-align: center;
-      color: red;
-      font-size: 5em;
-      font-family: 'Bebas Neue', cursive; 
-    margin-bottom: 150px;
-  }
+  text-align: center;
+	color: red;
+	font-size: 5em;
+	font-family: 'Bebas Neue', cursive; 
+  margin-bottom: 150px;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-image: url('https://wallpaper.dog/large/17068814.jpg');
+}
+
+button {
+  font-family: 'Bebas Neue', cursive;  
+  font-size: 1.3em;
+  background-color: red;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#blocks {  
+    
+  padding: 40px; 
+  width: 300px;
+  height: 200px;  
   
-  body {
-    font-family: 'Roboto Mono', monospace;
-    background-image: url('./images/background.jpg');
-  }
+  background-color: #c9c9d4;  
+  border: 2px solid var(--color-shadow);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px black;
   
-  #games{
-    margin: auto;    
-    text-align: center;
-    
-    padding-top: 40px; 
-    padding-left: 40px;
-    padding-right: 40px;
-    width: max-content;
-    height: 150px;  
-    
-    background-color: #c9c9d4;  
-    border: 2px solid var(--color-shadow);
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px black;
-  }
+  text-align: center;
   
-  #gamesGrid{
-    visibility: hidden;
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-    width: 800px;
-    
-    margin: auto;
-    text-align: center;
-    justify-content: space-around;
-    
-    background-color: #c9c9d4;  
-    border: 2px solid;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px black;
-    
-    font-family: 'Bebas Neue', cursive; 
-  }
+}
+
+#block-titles{
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+#gamesGrid{
+  visibility: hidden;
   
-  #returnButton { 
-    visibility: hidden;
-    
-    display: flex;
-    
-    justify-content: center;
-    align-items: center;
-    margin: auto;  
-    
-    margin-top: 10px;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   
-  button {
-    font-family: 'Bebas Neue', cursive;  
-    font-size: 1.3em;
-    background-color: red;
-  }
+  width: 800px;
+  
+  margin: auto;
+  text-align: center;
+  justify-content: space-around;
+  
+  background-color: #c9c9d4;  
+  border: 2px solid;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px black;
+  
+  font-family: 'Bebas Neue', cursive; 
+}
+
+#gamesGrid img{
+  height: 120px;
+  width: 90px;
+}
+
+#returnButton { 
+  visibility: hidden;
+  
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  margin: auto;  
+  
+  margin-top: 10px;
+}
