@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Roboto, monospace;  
+    color: #f3f4ed;
+    
+    background-image: url('background.jpeg');
+    background-size: cover;
+  }
+  
+  
+  section {
+    background-color: #536162;
+    
+    margin-left: auto;
+    margin-right: auto;  
+    margin-top: 250px;
+    
+    max-width: 500px;
+    height: 250px;
+    
+    border: 5px solid black;
+    border-radius: 50px;
+    
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 20px;
+  }
+  
+  #text {
+    margin-top: 20px;
+  }
+  
+  button {
+    font-family: Roboto, monospace;  
+    color: #f3f4ed;
+    
+    padding: 15px;
+    
+    background-color: #424642;
+    
+    border-radius: 5px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
